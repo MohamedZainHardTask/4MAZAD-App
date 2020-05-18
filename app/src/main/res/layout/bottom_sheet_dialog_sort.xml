@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/popup_dash" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_dialog_sort_tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="42dp"
+            android:background="@drawable/small_btn"
+            android:gravity="center"
+            android:text="@string/done"
+            android:fontFamily="@font/raleway_semibold"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_sort_rg_sortOptions"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioGroup
+            android:id="@+id/bottom_sheet_sort_rg_sortOptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21">
+
+            <RadioButton
+                android:id="@+id/bottom_sheet_dialog_sort_rb_nameSorting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_selector"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="@string/AtoZ"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="56dp" />
+
+            <RadioButton
+                android:id="@+id/bottom_sheet_dialog_sort_rb_descendingNameSorting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/radio_selector"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="@string/ZtoA"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="110dp" />
+
+            <RadioButton
+                android:id="@+id/bottom_sheet_dialog_sort_rb_priceSorting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/radio_selector"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="@string/lowToHigh"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+            <RadioButton
+                android:id="@+id/bottom_sheet_dialog_sort_rb_descendingPriceSorting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/radio_selector"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="@string/highToLow"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

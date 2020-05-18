@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_ended_auctions_riv_productImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_list_noimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="7dp" />
+
+    <TextView
+        android:id="@+id/item_ended_auctions_tv_highValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highValue"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/hight_value_box"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/item_ended_auctions_riv_productImage"
+        app:layout_constraintTop_toTopOf="@+id/item_ended_auctions_riv_productImage" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/item_ended_auctions_tv_biddingCounter"
+        app:layout_constraintStart_toStartOf="@+id/item_ended_auctions_riv_productImage"
+        app:layout_constraintTop_toBottomOf="@+id/item_ended_auctions_riv_productImage">
+
+        <TextView
+            android:id="@+id/item_ended_auctions_tv_closedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/closedDate"
+            android:textColor="@color/darkGray2"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/item_ended_auctions_tv_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/closedPrice"
+                android:textColor="@color/darkGray2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_ended_auctions_tv_closedPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="200KWD"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_ended_auctions_tv_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:text="Product NameWill Be..."
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/item_ended_auctions_tv_winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/winnerBy"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_ended_auctions_tv_biddingCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/auction_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="22"
+        android:gravity="center"
+        android:textColor="@color/darkGray2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_ended_auctions_riv_productImage"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout0" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/item_ended_auctions_riv_productImage"
+        app:layout_constraintEnd_toEndOf="@+id/item_ended_auctions_riv_productImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/item_ended_auctions_riv_productImage"
+        app:layout_constraintTop_toTopOf="@+id/item_ended_auctions_riv_productImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

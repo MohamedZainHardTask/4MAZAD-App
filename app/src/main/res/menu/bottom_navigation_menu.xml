@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_navigation_menu_home"
+        android:icon="@drawable/home_selector"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/bottom_navigation_menu_categories"
+        android:icon="@drawable/categories_selector"
+        android:title="@string/categories" />
+
+    <item
+        android:id="@+id/bottom_navigation_menu_notifications"
+        android:icon="@drawable/notifications_selector"
+        android:title="@string/notifications" />
+
+    <item
+        android:id="@+id/bottom_navigation_menu_more"
+        android:icon="@drawable/more_selector"
+        android:title="@string/more" />
+
+</menu>

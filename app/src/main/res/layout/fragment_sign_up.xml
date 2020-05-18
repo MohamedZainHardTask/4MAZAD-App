@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_sign_up_cl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/fragment_sign_up_tv_changeLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:drawableEnd="@drawable/lang_icon_blue"
+                android:drawablePadding="8dp"
+                android:padding="15dp"
+                android:text="@string/language"
+                android:textColor="@color/blue"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fragment_sign_up_iv_signUpBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:padding="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_icon" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_tv_changeLang"
+                app:srcCompat="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_sign_up_il_fullNameContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_sign_up_et_fullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:hint="@string/fullName"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textAlignment="viewStart"
+                        android:inputType="textPersonName"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textColorHint="@color/darkGray"
+                        android:textColor="@color/darkGray" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_sign_up_il_emailContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_sign_up_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:hint="@string/email"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textAlignment="viewStart"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textColorHint="@color/darkGray"
+                        android:textColor="@color/darkGray" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_sign_up_il_civilIdContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_sign_up_et_civilId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:hint="@string/civilId"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textAlignment="viewStart"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textColorHint="@color/darkGray"
+                        android:textColor="@color/darkGray" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/fragment_sign_up_il_mobileContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true"
+                        app:hintEnabled="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fragment_sign_up_et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/lightGray"
+                            android:ems="10"
+                            android:hint="@string/mobile"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/raleway_medium"
+                            android:textAlignment="viewStart"
+                            android:inputType="phone"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="15dp"
+                            android:textColorHint="@color/darkGray"
+                            android:textColor="@color/darkGray" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_sign_up_il_userNameContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_sign_up_et_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:hint="@string/userName"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textAlignment="viewStart"
+                        android:inputType="textPersonName"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textColorHint="@color/darkGray"
+                        android:textColor="@color/darkGray" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_sign_up_il_passContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_sign_up_et_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/password"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/darkGray" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_sign_up_il_confirmPassContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_sign_up_et_confirmPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/confirmPassword"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/darkGray" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fragment_sign_up_iv_frontCivilId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/upload_btn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="@string/civilIdFront"
+                            app:layout_constraintEnd_toEndOf="@+id/fragment_sign_up_iv_frontCivilId"
+                            app:layout_constraintStart_toStartOf="@+id/fragment_sign_up_iv_frontCivilId"
+                            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_iv_frontCivilId" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fragment_sign_up_iv_backCivilId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/upload_btn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="@string/civilIdBack"
+                            app:layout_constraintEnd_toEndOf="@+id/fragment_sign_up_iv_backCivilId"
+                            app:layout_constraintStart_toStartOf="@+id/fragment_sign_up_iv_backCivilId"
+                            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_iv_backCivilId" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/fragment_sign_up_tv_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/selectCivilIdImages"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/fragment_sign_up_cb_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:button="@drawable/check_box_selector"
+                        android:paddingStart="10dp"
+                        android:text="@string/agree"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/raleway_light"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/fragment_sign_up_tv_termsAndConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/termsAndConditions"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/raleway_light"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fragment_sign_up_tv_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/done_btn_larg"
+                    android:gravity="center"
+                    android:text="@string/signup"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

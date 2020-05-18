@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fragment_account_cl_container">
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/profile_icon"
+        android:drawablePadding="30dp"
+        android:gravity="center"
+        android:text="@string/editProfile"
+        android:fontFamily="@font/raleway_regular"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="35dp"
+        android:textColor="@color/darkGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fragment_account_iv_editProfileArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView49"
+        app:srcCompat="@drawable/forward_icon" />
+
+    <View
+        android:id="@+id/fragment_account_v_editProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/v1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/lock_icon"
+        android:drawablePadding="30dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/changePassword"
+        android:gravity="center"
+        android:fontFamily="@font/raleway_regular"
+        android:textColor="@color/darkGray"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+    <ImageView
+        android:id="@+id/fragment_account_iv_changePassArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView50"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_account_iv_editProfileArrow"
+        app:layout_constraintTop_toTopOf="@+id/textView50"
+        app:srcCompat="@drawable/forward_icon" />
+
+    <View
+        android:id="@+id/fragment_account_v_changePass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+    <View
+        android:id="@+id/view31"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/bid_icon"
+        android:drawablePadding="30dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/myBidding"
+        android:fontFamily="@font/raleway_regular"
+        android:textColor="@color/darkGray"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/view31" />
+
+    <ImageView
+        android:id="@+id/fragment_account_iv_auctionsRequestsArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView51"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_account_iv_changePassArrow"
+        app:layout_constraintTop_toTopOf="@+id/textView51"
+        app:srcCompat="@drawable/forward_icon" />
+
+    <View
+        android:id="@+id/fragment_account_v_auctionsRequests"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view31" />
+
+    <View
+        android:id="@+id/view30"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+
+    <TextView
+        android:id="@+id/textView511"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/history_icon"
+        android:drawablePadding="30dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/paymentHistory"
+        android:fontFamily="@font/raleway_regular"
+        android:textColor="@color/darkGray"
+        app:layout_constraintStart_toStartOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/view30" />
+
+    <ImageView
+        android:id="@+id/fragment_account_iv_paymentHistoryArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView511"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_account_iv_changePassArrow"
+        app:layout_constraintTop_toTopOf="@+id/textView511"
+        app:srcCompat="@drawable/forward_icon" />
+
+    <View
+        android:id="@+id/fragment_account_v_paymentHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view355"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view30"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view355"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView511"/>
+
+
+    <TextView
+        android:id="@+id/textView520"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/winning_icon"
+        android:drawablePadding="30dp"
+        android:fontFamily="@font/raleway_regular"
+        android:text="@string/myWinning"
+        android:gravity="center"
+        android:textColor="@color/darkGray"
+        app:layout_constraintStart_toStartOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/view355" />
+
+    <ImageView
+        android:id="@+id/fragment_account_iv_winningAuctionsArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView520"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_account_iv_paymentHistoryArrow"
+        app:layout_constraintTop_toTopOf="@+id/textView520"
+        app:srcCompat="@drawable/forward_icon" />
+
+    <View
+        android:id="@+id/fragment_account_v_winningAuctions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_account_v_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view355" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView520" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/logout_icon"
+        android:drawablePadding="30dp"
+        android:fontFamily="@font/raleway_regular"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toStartOf="@+id/textView520"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <ImageView
+        android:id="@+id/fragment_account_iv_logoutArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView52"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_account_iv_auctionsRequestsArrow"
+        app:layout_constraintTop_toTopOf="@+id/textView52"
+        app:srcCompat="@drawable/forward_icon" />
+
+    <View
+        android:id="@+id/fragment_account_v_logout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view32"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <include layout="@layout/loading"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

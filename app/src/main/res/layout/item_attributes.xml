@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_attribute_tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="Type"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_attribute_tv_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="Toyota"
+        android:textAlignment="viewStart"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/raleway_regular"
+        android:textColor="@color/darkGray2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_attribute_tv_name"
+        app:layout_constraintStart_toEndOf="@+id/item_attribute_tv_name"
+        app:layout_constraintTop_toTopOf="@+id/item_attribute_tv_name" />
+</LinearLayout>

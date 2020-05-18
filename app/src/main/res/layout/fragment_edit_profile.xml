@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_edit_profile_cl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:orientation="vertical"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_edit_profile_il_fullNameContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_edit_profile_et_fullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/fullName"
+                        android:inputType="textPersonName"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/darkGray"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_edit_profile_il_emailContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_edit_profile_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/darkGray"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_edit_profile_il_civilIdContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_edit_profile_et_civilId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/civilId"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/darkGray"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_edit_profile_il_mobileContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_edit_profile_et_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/mobile"
+                        android:inputType="phone"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/darkGray"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_edit_profile_il_userNameContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_edit_profile_et_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/lightGray"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/userName"
+                        android:inputType="textPersonName"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="15dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/darkGray"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+              <TextView
+                    android:id="@+id/fragment_edit_profile_tv_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/done_btn_larg"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

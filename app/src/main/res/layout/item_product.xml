@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_product_riv_productImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="7dp"
+            android:src="@drawable/products_list_noimg"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/item_product_riv_productImage"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toEndOf="@+id/item_product_riv_productImage"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/item_product_tv_productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:maxLines="2"
+            android:text="Product Name \nWill Be Here..."
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_product_tv_currentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="60.500 KD"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_product_riv_productImage"
+        app:layout_constraintTop_toTopOf="@+id/item_product_riv_productImage">
+
+        <TextView
+            android:id="@+id/item_product_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="12/12/2222 10:11PM"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item_product_tv_biddingCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/auction_icon"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="22"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_product_riv_productImage" />
+
+    <TextView
+        android:id="@+id/item_product_tv_highValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hight_value_small_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/highValue"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="@+id/item_product_riv_productImage"
+        app:layout_constraintTop_toTopOf="@+id/item_product_riv_productImage" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/item_product_riv_productImage"
+        app:layout_constraintEnd_toEndOf="@+id/item_product_riv_productImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/item_product_riv_productImage"
+        app:layout_constraintTop_toTopOf="@+id/item_product_riv_productImage" />
+
+    <View
+        android:id="@+id/item_product_v_details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_contact_us_cl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17"
+                tools:layout_editor_absoluteX="16dp">
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/twitter" />
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/instagram" />
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/youtube" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_contact_us_il_emailContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="35dp"
+                android:textColorHint="@color/darkGray2"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_contact_us_et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightGray"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_contact_us_il_mobileContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColorHint="@color/darkGray2"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/fragment_contact_us_il_emailContainer"
+                app:layout_constraintStart_toStartOf="@id/fragment_contact_us_il_emailContainer"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_il_emailContainer">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_contact_us_et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightGray"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="@string/mobile"
+                    android:inputType="phone"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_contact_us_il_subjectContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColorHint="@color/darkGray2"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_contact_us_il_mobileContainer"
+                app:layout_constraintStart_toStartOf="@+id/fragment_contact_us_il_mobileContainer"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_il_mobileContainer">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_contact_us_et_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightGray"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="@string/subject"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_contact_us_il_messageContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColorHint="@color/darkGray2"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_contact_us_il_subjectContainer"
+                app:layout_constraintStart_toStartOf="@+id/fragment_contact_us_il_subjectContainer"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_il_subjectContainer">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_contact_us_et_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightGray"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="top|start"
+                    android:hint="@string/message"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/fragment_contact_us_tv_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_contact_us_il_messageContainer"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fragment_contact_us_il_messageContainer"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_il_messageContainer"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include layout="@layout/loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

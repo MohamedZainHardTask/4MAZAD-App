@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    xmlns:gesture-image="http://schemas.android.com/tools">
+
+    <com.cuneytayyildiz.gestureimageview.GestureImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        gesture-image:min-scale="0.1"
+        gesture-image:max-scale="10.0"
+        gesture-image:strict="false"
+        android:id="@+id/item_image_gesture_iv_image" />
+</RelativeLayout>

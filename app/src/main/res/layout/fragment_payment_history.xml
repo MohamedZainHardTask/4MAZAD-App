@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fragment_payment_history_cl_container">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_payment_history_rv_paymentHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_payment_history"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_payment_history_tv_addPackage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_payment_history_tv_addPackage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn"
+        android:text="@string/addPackage"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/raleway_semibold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <include layout="@layout/loading"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
